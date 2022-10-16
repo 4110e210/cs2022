@@ -15,5 +15,5 @@
 
 # [Python - Add List Items](https://www.w3schools.com/python/python_lists_add.asp)
 
-- [Appeng Items](https://gist.github.com/4110e210/797db85ec3bd9580848328480b08989c)
+- [Append Items](https://gist.github.com/4110e210/797db85ec3bd9580848328480b08989c)
 - [Insert Items](
