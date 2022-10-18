@@ -1,16 +1,16 @@
 # 1012 Learning Python
 
-- [Python Tutorial](https://profile.w3schools.com/refresh-session?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fpython%2F)
+- [Python Tutorial](https://www.w3schools.com/python/)
 - [Python Tutorial](https://www.tutorialspoint.com/python/index.htm)
-- [HappyPythonDay](
+-[HappyPythonDay](https://github.com/MyFirstSecurity2020/HappyPythonDay)
 
 # 1012:Python Data Type:
 
-- Basic List Operations
-- Python - Access List Items
-- Python Lists
+-[Basic List Operations](https://www.youtube.com/watch?v=356a48ncGBU)
+-[Python - Access List Items](https://www.youtube.com/watch?v=3e-mggtl2IA&feature=youtu.be)
+-[Python Lists](https://www.w3schools.com/python/python_lists_access.asp)
 
-Access List Items
+-[Access List Items](
 
 List items are indexed and you can access them by referring to the index number:
 
@@ -19,16 +19,18 @@ Note: The first item has index 0.
 * Print the second item of the list:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 print(thislist[1])
-Negative Indexing
+
+= Negative Indexing
 Negative indexing means start from the end
 -1 refers to the last item, -2 refers to the second last item etc.
 * Print the last item of the list:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 print(thislist[-1])
+
 Range of Indexes
 
 You can specify a range of indexes by specifying where to start and where to end the range.
@@ -42,7 +44,7 @@ Remember that the first item has index 0.
 * Return the third, fourth, and fifth item:
 
 
-thislist = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+thislist = ["square", "circle", "triangle", "star", "diamond", "rectangle", "octogaon"]
 print(thislist[2:5])
 
 #This will return the items from position 2 to 5.
@@ -53,7 +55,7 @@ By leaving out the start value, the range will start at the first item:
 * This example returns the items from the beginning to, but NOT including, "blue":
 
 
-thislist = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+thislist = ["square", "circle", "triangle", "star", "diamond", "rectangle", "octogaon"]
 print(thislist[:4])
 
 #This will return the items from index 0 to index 4.
@@ -61,10 +63,10 @@ print(thislist[:4])
 #Remember that index 0 is the first item, and index 4 is the fifth item
 #Remember that the item in index 4 is NOT included
 By leaving out the end value, the range will go on to the end of the list:
-* This example returns the items from "yellow" to the end:
+* This example returns the items from "triangle" to the end:
 
 
-thislist = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+thislist = ["square", "circle", "triangle", "star", "diamond", "rectangle", "octogaon"]
 print(thislist[2:])
 
 #This will return the items from index 2 to the end.
@@ -72,10 +74,10 @@ print(thislist[2:])
 #Remember that index 0 is the first item, and index 2 is the third
 Range of Negative Indexes
 Specify negative indexes if you want to start the search from the end of the list:
-* This example returns the items from "orange" (-4) to, but NOT including "violet" (-1):
+* This example returns the items from "orange" (-4) to, but NOT including "octogaon" (-1):
 
 
-thislist = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+thislist = ["square", "circle", "triangle", "star", "diamond", "rectangle", "octogaon"]
 print(thislist[-4:-1])
 
 #Negative indexing means starting from the end of the list.
@@ -88,36 +90,36 @@ To determine if a specified item is present in a list use the in keyword:
 * Check if "apple" is present in the list:
 
 
-thislist = ["red", "orange", "yellow"]
-if "red" in thislist:
-  print("Yes, 'red' is in the fruits list")
+thislist = ["square", "circle", "triangle"]
+if "square" in thislist:
+  print("Yes, 'square' is in the fruits list")
 Python - Change List Items
 Change Item Value
 To change the value of a specific item, refer to the index number:
 * Change the second item:
 
 
-thislist = ["red", "orange", "yellow"]
-thislist[1] = "indigo"
+thislist = ["square", "circle", "triangle"]
+thislist[1] = "rectangle"
 
 print(thislist)
 Change a Range of Item Values
 To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:
-* Change the values "orange" and "yellow" with the values "indigo" and "violet":
+* Change the values "circle" and "triangle" with the values "rectangle" and "octagon":
 
 
-thislist = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+thislist = ["square", "circle", "triangle", "star", "diamond", "rectangle", "octogaon"]
 
-thislist[1:3] = ["indigo", "violet"]
+thislist[1:3] = ["rectable", "octagon"]
 
 print(thislist)
 If you insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
 * Change the second value by replacing it with two new values:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 
-thislist[1:2] = ["indigo", "violet"]
+thislist[1:2] = ["rectable", "octagon"]
 
 print(thislist)
 Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
@@ -126,9 +128,8 @@ if you insert less items than you replace, the new items will be inserted where 
 * Change the second and third value by replacing it with one value:
 
 
-thislist = ["red", "orange", "yellow"]
-
-thislist[1:3] = ["violet"]
+thislist = ["square", "circle", "triangle"]
+thislist[1:3] = ["octagon"]
 
 print(thislist)
 Insert Items
@@ -137,9 +138,9 @@ The insert() method inserts an item at the specified index:
 * Insert "watermelon" as the third item:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 
-thislist.insert(2, "indigo")
+thislist.insert(2, "rectangle")
 
 print(thislist) 
 Note: As a result of the example above, the list will now contain 4 items.
@@ -150,9 +151,9 @@ To add an item to the end of the list, use the append() method:
 * Using the append() method to append an item:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle""]
 
-thislist.append("green")
+thislist.append("star")
 
 print(thislist)
 Insert Items
@@ -162,65 +163,65 @@ Note: As a result of the examples above, the lists will now contain 4 items.
 * Insert an item as the second position:
 
 
-thislist = ["red", "orange", "yellow"]
-thislist.insert(1, "green")
+thislist = ["square", "circle", "triangle"]
+thislist.insert(1, "star")
 print(thislist)
 Extend List
 To append elements from another list to the current list, use the extend() method.
-* Add the elements of colors to thislist:
+* Add the elements of shapes to thislist:
 
 
-thislist = ["red", "orange", "yellow"]
-colors = ["green", "blue", "indigo"]
-thislist.extend(colors)
+thislist = ["square", "circle", "triangle""]
+colors = ["star", "diamond", "rectangle"]
+thislist.extend(shapes)
 print(thislist)
 
 
 (The elements will be added to the end of the list)
 Add Any Iterable
 The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
-* Add elements of a color to a list:
+* Add elements of a shapes to a list:
 
 
-thislist = ["red", "orange", "yellow"]
-thistuple = ("indigo, violet")
+thislist = ["square", "circle", "triangle"]
+thistuple = ("redctangle,octagon"]
 thislist.extend(thistuple)
 print(thislist)
 Python - Remove List Items
 Remove Specified Item
-* Remove "orange":
+* Remove "circle":
 
 
-thislist = ["red", "orange", "yellow"]
-thislist.remove("orange")
+thislist = ["square", "circle", "triangle"]
+thislist.remove("circle")
 print(thislist)
 Remove Specified Index
 The pop() method removes the specified index.
 * Remove the second item:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 thislist.pop(1)
 print(thislist)
 If you do not specify the index, the pop() method removes the last item.
 * Remove the last item:
 
 
-thislist = ["Red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 thislist.pop()
 print(thislist)
 The del keyword also removes the specified index:
 * Remove the first item:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle]
 del thislist[0]
 print(thislist)
 The del keyword can also delete the list completely.
 * Delete the entire list:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle]
 del thislist
 Clear the List
 The clear() method empties the list.
@@ -228,7 +229,7 @@ The list still remains, but it has no content.
 * Clear the list content:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 thislist.clear()
 print(thislist)
 Python - Sort Lists
@@ -238,7 +239,7 @@ List objects have a sort() method that will sort the list alphanumerically, asce
 * Sort the list alphabetically:
 
 
-thislist = ["red", "orange", "yellow", "green", "blue"]
+thislist = ["square", "circle", "triangle, "star", "diamond"]
 thislist.sort()
 print(thislist)
 * Sort the list numerically:
@@ -252,7 +253,7 @@ To sort descending, use the keyword argument reverse = True:
 * Sort the list descending:
 
 
-thislist = ["red", "orange", "yellow", "green", "blue"]
+thislist = ["square", "circle", "triangle, "star", "diamond"]
 thislist.sort(reverse = True)
 print(thislist)
 * Sort the list descending:
@@ -280,7 +281,7 @@ By default the sort() method is case sensitive, resulting in all capital letters
 * Case sensitive sorting can give an unexpected result:
 
 
-thislist = ["red", "orange", "yellow", "green"]
+thislist = ["square", "circle", "triangle, "star"]
 thislist.sort()
 print(thislist)
 Luckily we can use built-in functions as key functions when sorting a list.
@@ -288,7 +289,7 @@ So if you want a case-insensitive sort function, use str.lower as a key function
 * Perform a case-insensitive sort of the list:
 
 
-thislist = ["red", "orange", "yellow", "green"]
+thislist = ["square", "circle", "triangle, "star"]
 thislist.sort(key = str.lower)
 print(thislist)
 Reverse Order
@@ -297,7 +298,7 @@ The reverse() method reverses the current sorting order of the elements.
 * Reverse the order of the list items:
 
 
-thislist = ["red", "orange", "yellow", "green"]
+thislist = [square", "circle", "triangle, "star"]
 thislist.reverse()
 print(thislist)
 Python - Copy Lists
@@ -310,7 +311,7 @@ There are ways to make a copy, one way is to use the built-in List method copy()
 * Make a copy of a list with the copy() method:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 mylist = thislist.copy()
 print(mylist)
 Another way to make a copy is to use the built-in method list().
@@ -318,7 +319,7 @@ Another way to make a copy is to use the built-in method list().
 * Make a copy of a list with the list() method:
 
 
-thislist = ["red", "orange", "yellow"]
+thislist = ["square", "circle", "triangle"]
 mylist = list(thislist)
 print(mylist)
 Another way to make a copy is to use the built-in method list().
@@ -363,11 +364,11 @@ Python List reverse() Method
 * Reverse the order of the colors list:
 
 
-colors = ['red', 'orange', 'yellow']
+shapess = ["square", "circle", "triangle"]
 
-colors.reverse()
+shapess.reverse()
 
-print(colors)
+print(shapes)
 Definition and Usage
 - The reverse() method reverses the sorting order of the elements.
 Syntax
